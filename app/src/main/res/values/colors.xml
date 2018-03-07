@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#151f21</color>
+    <color name="colorAccent">#3261ba</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="elcometer_orange">#ed852a</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/run_stl_viewer"
+        android:orderInCategory="100"
+        android:title="@string/show_in_free_view"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/run_sql_viewer"
+        android:orderInCategory="100"
+        android:title="@string/show_database_queries"
+        app:showAsAction="never" />
+</menu>

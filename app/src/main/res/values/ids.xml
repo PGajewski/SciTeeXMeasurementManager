@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bluetooth_not_support" type="id">Your device doesn't support Bluetooth connection
+    </item>
+    <item name="bluetooth_not_active" type="id">Power on bluetooth first</item>
+</resources>

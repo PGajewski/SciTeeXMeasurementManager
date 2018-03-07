@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_margin="5sp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:gravity="right"
+            android:background="@drawable/close_btn" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_title"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:id="@+id/movableContainer">
+    </RelativeLayout>
+
+</LinearLayout>

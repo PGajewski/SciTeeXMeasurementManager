@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sciteex.ssip.sciteexmeasurementmanager"
+    android:versionCode="50000"
+    android:versionName="5.0">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DEVICE_POWER"
+        tools:ignore="ProtectedPermissions" />
+
+
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sciteex_logo_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MeasurementManager"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FileBrowser"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_file_browser"
+            android:parentActivityName=".MeasurementManager"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sciteex.ssip.sciteexmeasurementmanager.MeasurementManager" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MeasurementManager">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sciteex.ssip.sciteexmeasurementmanager.MeasurementManager" />
+        </activity>
+        <activity
+            android:name=".SciTeeXAR"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_sci_tee_xar"
+            android:parentActivityName=".MeasurementManager"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sciteex.ssip.sciteexmeasurementmanager.MeasurementManager" />
+        </activity>
+        <activity android:name="org.artoolkit.ar.base.camera.CameraPreferencesActivity" />
+        <activity
+            android:name=".BarcodeScanner"
+            android:label="@string/title_activity_barcode_scanner"
+            android:parentActivityName=".MeasurementManager"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sciteex.ssip.sciteexmeasurementmanager.MeasurementManager" />
+        </activity>
+
+        <service
+            android:name=".services.OpcUaService"
+            android:exported="true" />
+        <service
+            android:name=".services.DatabaseService"
+            android:exported="true" />
+        <service
+            android:name=".services.EventFilterService"
+            android:exported="true" />
+        <service
+            android:name=".services.UserInactiveService"
+            android:exported="true" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+
+        <service
+            android:name=".services.ButtonActionService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

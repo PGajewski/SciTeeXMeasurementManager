@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileSdkVersion 22
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.sciteex.ssip.sciteexmeasurementmanager"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions"
+                arguments "-DANDROID_TOOLCHAIN=clang"
+            }
+            ndkBuild{
+                cppFlags "-frtti -fexceptions"
+                arguments "-DANDROID_TOOLCHAIN=clang"
+            }
+        }
+
+        ndk {
+            moduleName = 'ARWrapperSciTeeXObjects'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            jniDebuggable true
+            debuggable true
+            renderscriptDebuggable true
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['../aRSciTeeXObjects/build/intermediates/ndkBuild/universal/debug/obj/local'.toString()]
+            jni.srcDirs = ['src/main/jni'.toString()]
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+        ndkBuild {
+            //path "src/main/jni/Android.mk"
+        }
+    }
+    flavorDimensions 'cpuArch'
+    productFlavors {
+        arm7 {
+            dimension 'cpuArch'
+            ndk {
+                abiFilter 'armeabi-v7a'
+            }
+        }
+        arm8 {
+            dimension 'cpuArch'
+            ndk {
+                abiFilters 'arm64-v8a'
+            }
+        }
+        x86 {
+            dimension 'cpuArch'
+            ndk {
+                abiFilter 'x86'
+            }
+        }
+        x86_64 {
+            dimension 'cpuArch'
+            ndk {
+                abiFilter 'x86_64'
+            }
+        }
+        universal {
+            dimension 'cpuArch'
+            ndk {
+                abiFilters 'x86', 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.android.gms:play-services-auth:11.4.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+    implementation project(':sqljdbc4-3.0')
+    implementation project(':mysql-connector')
+    implementation project(':aRBaseLib')
+    implementation project(':aRSciTeeXObjects')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:22.2.1'
+    implementation 'com.android.support:design:22.2.1'
+    implementation 'com.google.guava:guava:22.0-android'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:22.2.1'
+    testImplementation 'junit:junit:4.12'
+    implementation project(path: ':stllib')
+}

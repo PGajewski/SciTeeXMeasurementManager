@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/mainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sciteex.ssip.sciteexmeasurementmanager.MeasurementManager">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:clickable="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:layout_gravity="end"
+            android:gravity="end"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end">
+                <TextView
+                    android:id="@+id/partners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/partners"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="20sp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/elcometerImage"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="5sp"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:focusableInTouchMode="true"
+                    android:src="@mipmap/elcometer_logo"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:id="@+id/mainLayout"
+        android:gravity="center"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <WebView
+            android:id="@+id/top_panel"
+            android:layout_width="650sp"
+            android:layout_height="300sp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginTop="300sp"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:clickable="false"
+            android:focusable="false">
+        </WebView>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainLayoutHor"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/fab_margin"
+            android:gravity="center">
+
+
+            <WebView
+                android:id="@+id/left_panel"
+                android:layout_width="280sp"
+                android:layout_height="500sp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:focusable="false">
+            </WebView>
+
+            <ImageView
+                android:id="@+id/mainImage"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:onClick="onMainImageClick"
+                android:focusableInTouchMode="true"
+                android:src="@mipmap/logo_blue"
+                />
+
+            <WebView
+                android:id="@+id/right_panel"
+                android:layout_width="280sp"
+                android:layout_height="500sp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:focusable="false">
+            </WebView>
+
+        </LinearLayout>
+        <WebView
+            android:id="@+id/bottom_panel"
+            android:layout_width="650sp"
+            android:layout_height="200sp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="300sp"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:clickable="false"
+            android:focusable="false">
+        </WebView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/fab_margin"
+        android:id="@+id/menu_hint">
+
+        <com.sciteex.ssip.sciteexmeasurementmanager.FadingImageView
+            android:id="@+id/slide_menu_image"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:onClick="createCommentDialog"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/slide_menu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="@string/open_nav"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/includeMainView"
+        layout="@layout/content_measurement_manager"
+        app:layout_anchor="@+id/linearLayout"
+        tools:layout_editor_absoluteY="15dp" />
+
+</android.support.design.widget.CoordinatorLayout>

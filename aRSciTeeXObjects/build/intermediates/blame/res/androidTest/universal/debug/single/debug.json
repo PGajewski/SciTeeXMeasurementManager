@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\menu_options.xml.flat",
+        "source": "C:\\Users\\Gajos\\.gradle\\caches\\transforms-1\\files-1.1\\aRBaseLib-debug.aar\\1e4c50a92de4f8a4cd78f20ca0b55351\\res\\menu\\options.xml"
+    },
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\drawable-hdpi_settings.png.flat",
+        "source": "C:\\Users\\Gajos\\.gradle\\caches\\transforms-1\\files-1.1\\aRBaseLib-debug.aar\\1e4c50a92de4f8a4cd78f20ca0b55351\\res\\drawable-hdpi\\settings.png"
+    },
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\layout_main.xml.flat",
+        "source": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\bundles\\universalDebug\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\drawable-mdpi-v4_icon.png.flat",
+        "source": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\bundles\\universalDebug\\res\\drawable-mdpi-v4\\icon.png"
+    },
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\xml_preferences.xml.flat",
+        "source": "C:\\Users\\Gajos\\.gradle\\caches\\transforms-1\\files-1.1\\aRBaseLib-debug.aar\\1e4c50a92de4f8a4cd78f20ca0b55351\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\drawable-ldpi-v4_icon.png.flat",
+        "source": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\bundles\\universalDebug\\res\\drawable-ldpi-v4\\icon.png"
+    },
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\drawable-mdpi_settings.png.flat",
+        "source": "C:\\Users\\Gajos\\.gradle\\caches\\transforms-1\\files-1.1\\aRBaseLib-debug.aar\\1e4c50a92de4f8a4cd78f20ca0b55351\\res\\drawable-mdpi\\settings.png"
+    },
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\drawable-xhdpi_settings.png.flat",
+        "source": "C:\\Users\\Gajos\\.gradle\\caches\\transforms-1\\files-1.1\\aRBaseLib-debug.aar\\1e4c50a92de4f8a4cd78f20ca0b55351\\res\\drawable-xhdpi\\settings.png"
+    },
+    {
+        "merged": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\res\\merged\\androidTest\\universal\\debug\\drawable-hdpi-v4_icon.png.flat",
+        "source": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\bundles\\universalDebug\\res\\drawable-hdpi-v4\\icon.png"
+    }
+]

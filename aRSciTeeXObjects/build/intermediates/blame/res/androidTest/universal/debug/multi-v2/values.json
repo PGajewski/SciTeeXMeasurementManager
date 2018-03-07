@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\incremental\\mergeUniversalDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "F:\\AR\\AndroidStudioProjects\\SciTeeXMeasurementManager\\aRSciTeeXObjects\\build\\intermediates\\bundles\\universalDebug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,111",
+                        "endColumns": "55,74",
+                        "endOffsets": "106,181"
+                    },
+                    "to": {
+                        "startLines": "14,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "479,535",
+                        "endColumns": "55,74",
+                        "endOffsets": "530,605"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Gajos\\.gradle\\caches\\transforms-1\\files-1.1\\aRBaseLib-debug.aar\\1e4c50a92de4f8a4cd78f20ca0b55351\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,7,10,13,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "207,311,424,522,631,686,756,827,892",
+                        "endLines": "6,9,12,15,16,17,18,19,20",
+                        "endColumns": "19,19,19,19,54,69,70,64,73",
+                        "endOffsets": "306,419,517,626,681,751,822,887,961"
+                    },
+                    "to": {
+                        "startLines": "2,5,8,11,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,272,370,610,665,735,806,871",
+                        "endLines": "4,7,10,13,16,17,18,19,20",
+                        "endColumns": "19,19,19,19,54,69,70,64,73",
+                        "endOffsets": "154,267,365,474,660,730,801,866,940"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SciTeeXMeasurementManager.iml" filepath="$PROJECT_DIR$/SciTeeXMeasurementManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aRBaseLib/aRBaseLib.iml" filepath="$PROJECT_DIR$/aRBaseLib/aRBaseLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aRSciTeeXObjects/aRSciTeeXObjects.iml" filepath="$PROJECT_DIR$/aRSciTeeXObjects/aRSciTeeXObjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-connector/mysql-connector.iml" filepath="$PROJECT_DIR$/mysql-connector/mysql-connector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqljdbc4-3.0/sqljdbc4-3.0.iml" filepath="$PROJECT_DIR$/sqljdbc4-3.0/sqljdbc4-3.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stllib/stllib.iml" filepath="$PROJECT_DIR$/stllib/stllib.iml" />
+    </modules>
+  </component>
+</project>

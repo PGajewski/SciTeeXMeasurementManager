@@ -1,0 +1,2 @@
+include ':app', ':aRBaseLib', ':aRSciTeeXObjects', ':stllib', ':sqljdbc4-3.0', ':mysql-connector'
+

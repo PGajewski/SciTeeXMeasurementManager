@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background_material_light"
+    android:id="@+id/file_browser_view"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/header_motto"
+        />
+
+    <ListView android:id="@android:id/list" android:layout_width="match_parent"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,329 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <!--Database connection -->
+    <PreferenceCategory
+        android:title="@string/database_config"
+        />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/default_database_server"
+        android:inputType="textCapWords"
+        android:key="database_server"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/database_server" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/default_database"
+        android:inputType="textCapWords"
+        android:key="database_name"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/database_name" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/default_database_user"
+        android:inputType="textCapWords"
+        android:key="database_user"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/database_user" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/default_database_password"
+        android:inputType="textPassword"
+        android:key="database_password"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/database_password" />
+
+    <ListPreference
+        android:defaultValue="MSSQL"
+        android:entries="@array/pref_database_type_titles"
+        android:entryValues="@array/pref_database_type_values"
+        android:key="database_type"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_database_type" />
+
+    <Preference
+        android:title="@string/send_comments_to_database"
+        android:key="send_comments_to_database"
+        android:icon="@drawable/abc_ic_commit_search_api_mtrl_alpha"
+        />
+
+    <!-- OPC UA Preferences -->
+
+    <PreferenceCategory
+        android:title="@string/opc_ua_config"
+        />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/default_opc_ua_endpoint"
+        android:inputType="textCapWords"
+        android:key="opc_ua_endpoint"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/opc_ua_endpoint" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/default_opc_ua_user"
+        android:inputType="textCapWords"
+        android:key="opc_ua_user"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/opc_ua_user" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textPassword"
+        android:password="true"
+        android:key="opc_ua_password"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:summary=""
+        android:singleLine="true"
+        android:title="@string/opc_ua_password" />
+
+
+    <ListPreference
+        android:defaultValue="180"
+        android:entries="@array/pref_sync_frequency_titles"
+        android:entryValues="@array/pref_sync_frequency_values"
+        android:key="sync_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_sync_frequency" />
+
+    <!-- OPC UA variable definitions. -->
+    <PreferenceCategory
+        android:title="@string/opc_ua_variables"
+        />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/variable_def_template"
+        android:inputType="textMultiLine"
+        android:key="opc_ua_variables_field"
+        android:lines="10"
+        android:maxLines="50"
+        android:minLines="10"
+        android:scrollbarSize="100sp"
+        android:singleLine="false"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:height="100sp"
+        android:title="@string/write_variables" />
+
+    <!-- Elcometer -->
+    <PreferenceCategory
+        android:title="@string/elcometer_options"
+        />
+
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_elcometer_actual_value_node"
+        android:inputType="numberDecimal"
+        android:key="elcometer_actual_value_node"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/elcometer_actual_value_node" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_elcometer_actual_value_path"
+        android:inputType="textMultiLine"
+        android:key="elcometer_actual_value_path"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/elcometer_actual_value_path" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_elcometer_array_node"
+        android:inputType="numberDecimal"
+        android:key="elcometer_opc_ua_node"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/elcometer_array_node" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_elcometer_array_path"
+        android:inputType="textMultiLine"
+        android:key="elcometer_opc_ua_path"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/elcometer_array_path" />
+
+    <SwitchPreference
+        android:key="parse_value_key"
+        android:summary="@string/parse_values_info"
+        android:title="@string/parse_values" />
+
+    <!-- Info Variable -->
+    <PreferenceCategory
+        android:title="@string/alert_variable"
+        />
+
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_alert_node"
+        android:inputType="numberDecimal"
+        android:key="alert_node"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/alert_variable_node" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_alert_path"
+        android:inputType="textMultiLine"
+        android:key="alert_path"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/alert_variable_path" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_alert_message"
+        android:inputType="textMultiLine"
+        android:key="alert_message"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/alert_variable_message" />
+
+    <!-- Info Variable -->
+    <PreferenceCategory
+        android:title="@string/info_variable"
+        />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_info_node"
+        android:inputType="numberDecimal"
+        android:key="info_node"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/info_variable_node" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_info_path"
+        android:inputType="textMultiLine"
+        android:key="info_path"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/info_variable_path" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_info_message"
+        android:inputType="textMultiLine"
+        android:key="info_message"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/info_variable_message" />
+
+    <!-- User Login Variable -->
+    <PreferenceCategory
+        android:title="@string/user_opcua_login"
+        />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="user_login_switch"
+        android:summary="@string/send_login_switch_summary"
+        android:title="@string/send_login_switch" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_login_node"
+        android:inputType="numberDecimal"
+        android:key="opc_ua_login_node"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/login_node" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_login_path"
+        android:inputType="textMultiLine"
+        android:key="opc_ua_login_path"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/login_path" />
+
+    <!-- Scanning Variable -->
+    <PreferenceCategory
+        android:title="@string/scanning_result"
+        />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="scan_result_switch"
+        android:summary="@string/send_scanning_result_switch_summary"
+        android:title="@string/send_scanning_result_switch" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_scanning_result_node"
+        android:inputType="numberDecimal"
+        android:key="opc_ua_scan_node"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/scanning_result_node" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:gravity="top|left"
+        android:defaultValue="@string/default_scanning_result_path"
+        android:inputType="textMultiLine"
+        android:key="opc_ua_scan_path"
+        android:singleLine="true"
+        android:lineSpacingExtra="@dimen/fab_margin"
+        android:title="@string/scanning_result_path" />
+
+    <!-- Other -->
+    <PreferenceCategory
+        android:title="@string/other_sync"
+        />
+
+    <!-- This preference simply launches an intent when selected. Use this UI sparingly, per
+         design guidelines. -->
+    <Preference android:title="@string/pref_title_system_sync_settings">
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </Preference>
+
+</PreferenceScreen>

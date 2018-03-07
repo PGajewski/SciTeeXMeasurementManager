@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="min_measure_bound">
+        <item>30.0</item>
+        <item>30.0</item>
+        <item>30.0</item>
+        <item>30.0</item>
+        <item>30.0</item>
+        <item>30.0</item>
+    </string-array>
+<string name="default_login">SciTeeX</string>
+
+</resources>

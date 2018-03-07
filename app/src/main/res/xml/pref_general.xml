@@ -1,0 +1,74 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/personal_data" />
+
+    <Preference
+        android:capitalize="words"
+        android:defaultValue="@string/default_login"
+        android:key="login"
+        android:title="@string/login" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="numberDecimal"
+        android:key="actual_job_id"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/job_id" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="numberDecimal"
+        android:key="worker_id"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/worker_id" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="owner_switch"
+        android:summary="@string/pref_description_social_recommendations"
+        android:title="@string/pref_title_social_recommendations" />
+
+    <PreferenceCategory
+        android:title="@string/programs_settings" />
+
+
+    <SwitchPreference
+        android:key="additional_info_switch"
+        android:summary="@string/if_exist"
+        android:title="@string/use_additional_info" />
+
+    <PreferenceCategory
+        android:title="@string/security"
+        />
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/time_list_titles"
+        android:entryValues="@array/time_list_values"
+        android:key="inactive_time_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/login_page_after_inactive_summary" />
+
+    <PreferenceCategory
+        android:title="@string/other_options"
+        />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <Preference
+        android:title="@string/clear_programs_list"
+        android:key="clean_programs"
+        />
+
+</PreferenceScreen>

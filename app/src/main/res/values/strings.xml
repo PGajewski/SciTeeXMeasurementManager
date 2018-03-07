@@ -1,0 +1,327 @@
+<resources>
+    <string name="app_name">SciTeeX Measurement Manager</string>
+
+    <!--Toolbox -->
+    <string name="partners">Partners:</string>
+    <string name="elcometer_webpage">http://www.elcometer.com/en/index.html</string>
+    <string name="sciteex_webpage">http://sciteex.com/</string>
+    <string name="open_nav">Slide to open</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_file_explorer">FileExplorerActivity</string>
+    <string name="title_activity_file_chooser">Choose program</string>
+    <string name="add_program">Add program</string>
+    <string name="options">Options</string>
+    <string name="sciteex_ar">SciTeeX AR</string>
+    <string name="sciteex_opc_variable">Write to OPC UA</string>
+    <string name="run_program">Run program</string>
+    <string name="incompatible_file">Incompatible file! Try once again.</string>
+    <string name="first_measure_point">"That was first measure point."</string>
+    <string name="last_measure_point">"That was last measure point."</string>
+    <string name="cannot_find_file">File does not exist.</string>
+    <string name="program">Program</string>
+    <string name="please_run_program">First you must choose program</string>
+    <string name="no_program">No programs</string>
+    <string name="added_program">Program added!</string>
+    <string name="program_already_added">Program already added!</string>
+    <string name="open_progam">Open program: </string>
+    <string name="program_closed">Program closed</string>
+
+    <string name="title_activity_file_browser">FileBrowser</string>
+
+
+    <!-- File browser -->
+    <string name="invalid_file">Chosen invalid file type.</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- General settings -->
+
+    <string name="personal_data">Personal data</string>
+    <string name="programs_settings">Programs settings</string>
+    <string name="job_id">Number of actual job</string>
+    <string name="worker_id">Your personal ID number in company</string>
+
+    <string name="use_additional_info">Use additional information</string>
+    <string name="if_exist">Works only with special data types </string>
+
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Add owner to batches results</string>
+    <string name="pref_description_social_recommendations">Recommendations for quality control workers
+    </string>
+
+    <string name="pref_title_display_name">User name</string>
+    <string name="pref_default_display_name">SciTeeX</string>
+
+    <string-array name="time_list_titles">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>3 minute</item>
+        <item>5 minute</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="time_list_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>300</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="clear_programs_list">Clear programs list</string>
+    <string name="program_cleared">Programs list cleared!</string>
+
+    <!-- Settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>3 minute</item>
+        <item>5 minute</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>300</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_database_type_titles">
+        <item>Microsoft SQL Server</item>
+        <item>Oracle Database</item>
+        <item>MySQL</item>
+        <item>SQLite</item>
+    </string-array>
+
+    <string-array name="pref_database_type_values">
+        <item>MSSQL</item>
+        <item>ORACLE</item>
+        <item>MYSQL</item>
+        <item>SQLITE</item>
+    </string-array>
+
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- Additional data infos -->
+    <string name="no_panel">Cannot find panel in slide</string>
+    <string name="end_panel">End of additional data</string>
+    <string name="additional_data_error">Cannot load additional data</string>
+
+    <!-- Comments -->
+    <string name="add_comment">Add comment to slide</string>
+    <string name="accept_comment">Add comment</string>
+    <string name="cancel_comment">Cancel comment</string>
+
+    <!-- OPC UA modify menu -->
+    <string name="modify_opc_ua_variable">OPC UA variables</string>
+    <string name="accept_opc_ua_change">Change values</string>
+    <string name="cancel_opc_ua_change">Cancel changing</string>
+
+    <!-- Database -->
+    <string name="database_config">Database configuration</string>
+    <string name="database_server">Database server</string>
+    <string name="database_name">Database name</string>
+    <string name="database_user">Database user</string>
+    <string name="database_password">Database password</string>
+    <string name="sending_comments_in_progress">Sending comments. Please wait...</string>
+    <string name="send_comments_to_database">Send comments NOW!</string>
+    <string name="send_to_database_error">Cannot send data to database: </string>
+
+    <!-- OPC UA -->
+    <string name="opc_ua_config">OPC UA Client configuration</string>
+    <string name="opc_ua_endpoint">Server endpoint</string>
+    <string name="opc_ua_user">OPC UA user</string>
+    <string name="opc_ua_password">OPC UA password</string>
+    <string name="opc_ua_watched_variable">Variable to watch</string>
+    <string name="opc_ua_variables">OPC UA variables</string>
+    <string name="write_variables">Write OPC UA definitions</string>
+    <string name="variable_def_template">type[node,path](message)</string>
+    <string name="invalid_opc_ua_path">Invalid OPC UA adress!</string>
+    <string name="in_line">Error in line: </string>
+    <string name="cannot_connect">Cannot connect to OPC UA Server!</string>
+    <string name="cannot_load_variable">Cannot load variable </string>
+    <string name="cannot_save_variable">Cannot save variable </string>
+    <string name="variable_save_success">Variable save success!</string>
+    <string name="no_endpoint">Endpoint is not definied!</string>
+    <string name="no_opc_ua_data">No OPC UA data</string>
+    <string name="elcometer_array_node">Elcometer array OPC UA node</string>
+    <string name="elcometer_array_path">Elcometer array OPC UA path</string>
+    <string name="cannot_create_elcometer_client">Check Elcometer array address</string>
+    <string name="cannot_send_elcometer_measures">Cannot send new measures.</string>
+    <string name="sending_elcometer">Sending measures to OPC UA...</string>
+    <string name="send_to_opc_ua">Send</string>
+    <string name="elcometer_array_to_opc_success">Successful saved Elcometer measures</string>
+
+    <!-- Notifications -->
+    <string name="error">Error!</string>
+    <string name="variable_type_fault">Invalid variable type!</string>
+
+    <!-- Barcode Scanner -->
+    <string name="sciteex_barcode">Barcode Reader</string>
+    <string name="scan">Scan now!</string>
+    <string name="scan_no_data">No scan data received!</string>
+
+    <!-- Other sync options -->
+    <string name="other_sync">Other synchronization options</string>
+
+    <string name="title_activity_sci_tee_xar">SciTeeXAR</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_barcode_scanner">BarcodeScanner</string>
+
+    <!-- Measures -->
+    <string name="measures">Measures</string>
+    <string name="add_button">Add measure</string>
+
+    <!-- Bluetooth Connection -->
+    <string name="elcometer_connect">Elcometer Gauge</string>
+    <string name="not_bluetooth">Your device doesn\'t support bluetooth connection!</string>
+    <string name="local_separator">.</string>
+    <string name="wait_for_measure">Waiting...</string>
+    <string name="remember">Remember</string>
+    <string name="no_history">History empty</string>
+    <string name="connect_with_last_elcometer">Connected with any paired Elcometer device in range</string>
+    <string name="disconnect_gauge">Gauge disconnected</string>
+    <string name="connecting_with_gauge">Connecting with gauge...</string>
+    <string name="first_make_measure">First make measure!</string>
+    <string name="cannot_connect_with_gauge">Cannot connect with gauge. Try again.</string>
+    <string name="connect_with_chosen">Connected with chosen device</string>
+    <string name="cancel_choose_gauge">Cancel</string>
+    <string name="connected_with_gauge">Connected with gauge: </string>
+    <string name="accept_adding_measure">Add to history</string>
+    <string name="cancel_adding_measure">Cancel</string>
+    <string name="adding_measure_confirmation_text">Are you sure you want add out of bounds measure to history?</string>
+    <string name="remember_measure">Remember measure</string>
+    <string name="delete_measure">Delete measure</string>
+    <string name="confirm_deleting_of_point_text">Are you sure you want delete measure for point number</string>
+    <string name="accept_deleting_measure">Delete measure</string>
+    <string name="cancel_deleting_measure">Cancel</string>
+    <string name="empty_measure">empty</string>
+    <string name="elcometer_options">Elcometer gauges options</string>
+    <string name="elcometer_actual_value_path">Elcometer actual value path</string>
+    <string name="elcometer_actual_value_node">Elcometer actual value node</string>
+    <string name="parse_values_info">Send Elcometer value includes units</string>
+    <string name="parse_values">Parse measures</string>
+    <string name="stl_error" />
+    <string name="stl_viewer">Free viewer</string>
+    <string name="show_in_free_view">Show in free view</string>
+    <string name="bluetooth_not_support">Your device doesn\'t support Bluetooth connection.</string>
+    <string name="bluetooth_not_active">Bluetooth modul inactive. Power on Bluetooth module.</string>
+    <string name="choose_query">Choose SQL query</string>
+    <string name="query_name">Query name</string>
+    <string name="query_body">Query body</string>
+    <string name="show_database_queries">Show database queries</string>
+    <string name="add_new_query">New query...</string>
+    <string name="cancel">Cancel</string>
+    <string name="nav_variable_reader">Variable Reader</string>
+    <string name="invalid_node">Node is not a number!</string>
+    <string name="pref_title_database_type">Database type</string>
+    <string name="sql_error">SQL Error</string>
+    <string name="connected_with_database">Connected with database</string>
+    <string name="successfully_connected_with">Connected with database:</string>
+    <string name="cannot_read_alert_variable">Cannot check alert variable</string>
+    <string name="alert_error">Alert error</string>
+    <string name="info_error">Info error</string>
+    <string name="cannot_read_info_variable">Cannot read info variable</string>
+    <string name="alert">Alert</string>
+    <string name="info">Info</string>
+    <string name="alert_variable">Alert OPC UA boolean variable</string>
+    <string name="info_variable">Info OPC UA boolean variable</string>
+    <string name="info_variable_node">Info variable node</string>
+    <string name="info_variable_path">Info variable path</string>
+    <string name="info_variable_message">Info variable message</string>
+    <string name="alert_variable_node">Alert variable node</string>
+    <string name="alert_variable_path">Alert variable path</string>
+    <string name="alert_variable_message">Alert variable message</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="exit">Exit</string>
+    <string name="exit_question">Do you want to close or minimalize application?</string>
+    <string name="hide_app">Hide</string>
+    <string name="close_app">Close</string>
+    <string name="stay_in_app">Stay</string>
+    <string name="other_options">Other options</string>
+    <string name="security">Security options</string>
+    <string name="login_screen">Login screen</string>
+    <string name="login_page_after_inactive_summary">Use screen after inactive time</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome back, </string>
+    <string name="user_opcua_login">Sending login To OPC UA</string>
+    <string name="login_node">Login variable node</string>
+    <string name="login_path">Login variable path</string>
+    <string name="scanning_result">Send scanning result to OPC UA</string>
+    <string name="send_login_switch">Send login to OPC-UA Server</string>
+    <string name="send_login_switch_summary">Switch to send actual user login to OPC-UA Server</string>
+    <string name="send_scanning_result_switch">Send scanning result</string>
+    <string name="send_scanning_result_switch_summary">Switch to send scanning result to OPC-UA Server</string>
+    <string name="scanning_result_node">Scanning result node</string>
+    <string name="scanning_result_path">Scanning result path</string>
+    <string name="cannot_send_scan">Cannot send scanning result</string>
+    <string name="no_connection">No connection</string>
+    <string name="no_connection_or_variable">No connection or variable</string>
+    <string name="write_error">Cannot write variable</string>
+    <string name="login_sent">Login sent!</string>
+    <string name="cannot_send_login">Cannot send login</string>
+    <string name="scanning_error">Cannot send scanning result</string>
+    <string name="scan_sent">Scan sent!</string>
+    <string name="new_query_title">New query title</string>
+    <string name="title">title</string>
+    <string name="new_query_body">New query body</string>
+    <string name="add_query_button">Add query</string>
+    <string name="cancel_adding_query_button">Cancel</string>
+    <string name="query_title_required">Title required!</string>
+    <string name="query_body_required">Body required!</string>
+    <string name="cannot_add_query">Cannot add query</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_opc_ua_endpoint">opc.tcp://10.42.0.1:4840/SciTeeX/server/</string>
+    <string name="default_opc_ua_user">User</string>
+    <string name="default_opc_ua_password">sciteex</string>
+    <string name="default_elcometer_array_node">0</string>
+    <string name="default_elcometer_array_path">elcometer_measures</string>
+    <string name="default_elcometer_actual_value_node">0</string>
+    <string name="default_elcometer_actual_value_path">elcometer_actual_value</string>
+
+    <string name="default_alert_node">0</string>
+    <string name="default_alert_path">alert_bool</string>
+    <string name="default_alert_message">Check machine!</string>
+
+    <string name="default_info_node">0</string>
+    <string name="default_info_path">info_bool</string>
+    <string name="default_info_message">Make measures!</string>
+
+    <string name="default_login_node">0</string>
+    <string name="default_login_path">user_login</string>
+
+    <string name="default_scanning_result_node">0</string>
+    <string name="default_scanning_result_path">scanning_result</string>
+
+
+    <!-- Statuses -->
+    <string name="status2147483648">Bad</string>
+    <string name="status2161770496">BadAggregateConfigurationRejected</string>
+    <string name="status2161508352">BadAggregateInvalidInputs</string>
+    <string name="status2161377280">BadAggregateListMismatch</string>
+    <string name="status2161442816">BadAggregateNotSupported</string>
+    <string name="status2153250816">BadApplicationSignatureInvalid</string>
+    <string name="status2155216896">BadArgumentsMissing</string>
+    <string name="status2150957056">BadAttributeIdInvalid</string>
+    <string name="status2161573888">BadBoundNotFound</string>
+    <string name="status2161639424">BadBoundNotSupported</string>
+    <string name="status2152529920">BadBrowseDirectionInvalid</string>
+    <string name="status2153840640">BadBrowseNameDuplicated</string>
+    <string name="status2153775104">BadBrowseNameInvalid</string>
+    <string name="status2165112832">BadCertificateChainIncomplete</string>
+    <string name="status2148925440">BadCertificateHostNameInvalid</string>
+    <string name="status2148663296">BadCertificateInvalid</string>
+    <string name="status2149318656">BadCertificateIssuerRevocationUnknown</string>
+    <string name="status2149449728">BadCertificateIssuerRevoked</string>
+    <string name="status2148859904">BadCertificateIssuerTimeInvalid</string>
+    <string name="status2149122048">BadCertificateIssuerUseNotAllowed</string>
+    <string name="status2149253120">BadCertificateRevocationUnknown</string>
+    <string name="status2149384192">BadCertificateRevoked</string>
+    <string name="status2148794368">BadCertificateTimeInvalid</string>
+    <string name="status2149187584">BadCertificateUntrusted</string>
+    <string name="status2148990976">BadCertificateUriInvalid</string>
+    <string name="status2149056512">BadCertificateUseNotAllowed</string>
+    <string name="status2147811328">BadCommunicationError</string>
+    <string name="status2157445120">BadConditionAlreadyDisabled</string>
+    <string name="status2160852992">BadConditionAlreadyEnabled</string>
+    <string name="status2161180672">BadConditionAlreadyShelved</string>
+    <string name="status2158886912">BadConnectionClosed</string>
+</resources>

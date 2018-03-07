@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/nav_button_group"
+        android:onClick="clickTest">
+        <item
+            android:id="@+id/nav_add_program"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/add_program"/>
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/options" />
+
+        <item
+            android:id="@+id/nav_ar"
+            android:icon="@mipmap/ar_icon"
+            android:title="@string/sciteex_ar" />
+
+        <item
+            android:id="@+id/nav_barcode"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/sciteex_barcode" />
+
+        <item
+            android:id="@+id/nav_variable_reader"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nav_variable_reader" />
+
+        <item
+            android:id="@+id/nav_opc"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/sciteex_opc_variable" />
+
+        <item
+            android:id="@+id/nav_elcometer"
+            android:icon="@mipmap/bluetooth_icon"
+            android:title="@string/elcometer_connect" />
+    </group>
+
+    <item android:title="@string/run_program"
+        android:id = "@+id/program_list_menu"
+        app:showAsAction="always">
+        <menu>
+            <item android:title="@string/no_program"></item>
+        </menu>
+    </item>
+
+</menu>
